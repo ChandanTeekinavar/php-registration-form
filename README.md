@@ -4,7 +4,7 @@ This project provides a simple user registration form built with PHP and MySQL
 It includes a registration form, database interaction, and basic password hashing. The application can be deployed using Docker and Ansible.
 
 
-**Key Features**
+**Key Features** : -
 User registration form.
 Password hashing with bcrypt.
 Basic database interaction.
@@ -14,7 +14,7 @@ Jenkins for CI/CD Pipeline
 Selenium for Automation testing (https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git)
 
 
-**Files and Directory Structure: -**
+**Files and Directory Structure**: -
 **register.html**: HTML file containing a simple form of Registration form with basic styling for a clean and user-friendly interface.
 
 **register.php**: PHP script is responsible for handling user interface. It interacts with the database to store the credentials securely.
@@ -30,14 +30,14 @@ Selenium for Automation testing (https://github.com/ChandanTeekinavar/php-regist
 
 
 
-**Info about the project**
+**Info about the project** : -
 After successfully creating the application and configuring the database, Docker is used to build and containerize the application. A Jenkins CICD pipeline is created to stage the Docker Container using Ansible Playbook on to the test server . After staging, a seperate CICD pipeline is created for automation testing using selenium. With successful automation testing it is deployed on to the production server with “prod_config.yml”.
 Also integrated GitHub Webhook so that the automation happens with a single commit on GitHub repository.
 
 
 
 
-**Steps to use this App**
+**Steps to use this App** : -
 Clone this repo to your machine by running " git clone https://github.com/ChandanTeekinavar/php-registration-form.git" .
 
 In Dockerfile there is environment placeholders you need to replace them with your database place holders.
@@ -52,7 +52,7 @@ And update docker image name in playbook.yml
 
 And then you can you access it through the IP address of you worker nodes by giving appropriate port number.
 
-**Testing**
+**Testing** : -
 For testing I have used the different repo. The repo link is "https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git".
 
 Update the your application link on the test scripts.
