@@ -11,4 +11,4 @@
     command: sudo systemctl start docker
 
   - name: deploy php-registration
-    command: sudo docker run -itd -p 8080:80 chandanteekinavar/php-registration:1.0
+    command: sudo docker run -itd -p 8080:80 chandanteekinavar/php-registration-form:1.0
