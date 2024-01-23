@@ -41,7 +41,22 @@ Then create CI/CD pipeline to automate.
 
 Then build the Docker image 
 
+Create an ansible inventory file in the instance where jenkins is installed.
+
 And update docker image name in playbook.yml
 
 And then you can you access it through the IP address of you worker nodes by giving appropriate port number.
+
+**Testing**
+For testing I have used the different repo. The repo link is "https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git".
+
+Update the your application link on the test scripts.
+
+And then package the test scripts. Hence I have used Assembly plugin in the Selenium. It will create a Jar file with all the Dependencies when you packages it. So that you can run it. To package it run "mvn clean package" command. It will create a jar file with all dependencies file in the target folder.
+
+To run that jar file give the command " java -jar <jar file name> (Give the name of the jar file which will be created after running the "mvn clean package" command)
+
+
+
+
 
