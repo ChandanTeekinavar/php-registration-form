@@ -29,3 +29,19 @@ Application Deployment
 After successfully creating the application and configuring the database, Docker is used to build and containerize the application. A Jenkins CICD pipeline is created to stage the Docker Container using Ansible Playbook on to the test server . After staging, a seperate CICD pipeline is created for automation testing using selenium. With successful automation testing it is deployed on to the production server with “prod_config.yml”.
 Also integrated GitHub Webhook so that the automation happens with a single commit on GitHub repository.
 
+
+
+
+**Steps to use this App**
+Clone this repo to your machine by running " git clone https://github.com/ChandanTeekinavar/php-registration-form.git" .
+
+In Dockerfile there is environment placeholders you need to replace them with your database place holders.
+
+Then create CI/CD pipeline to automate.
+
+Then build the Docker image 
+
+And update docker image name in playbook.yml
+
+And then you can you access it through the IP address of you worker nodes by giving appropriate port number.
+
