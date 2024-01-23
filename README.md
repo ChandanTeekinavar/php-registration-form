@@ -11,6 +11,7 @@ Basic database interaction.
 containerizing the application with docker.
 Ansible for deployin to production and testing environments.
 Jenkins for CI/CD Pipeline
+Selenium for Automation testing (https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git)
 
 
 **Files and Directory Structure: -**
@@ -23,6 +24,8 @@ Jenkins for CI/CD Pipeline
 **Dockerfile**: - It containerize the application.
 
 **playbook.yml**: Ansible playbook file, which contains configurations to perform on the worker nodes. It installs Docker, starts the Docker service, and runs the Docker container with the registration form application on port 8080.
+
+**Selenium** : It will do automation testing. I have pushed it to seperate gitHub repo. The repo link is "https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git" I have used Assembly plugin in the Selenium. It will create a Jar file with all the Dependencies when you packages it. So that you can run it. To package it run "mvn clean package" command. It will create a jar file with all dependencies file in the target folder.
 
 
 Application Deployment
