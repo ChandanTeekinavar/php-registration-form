@@ -28,7 +28,9 @@ Selenium for Automation testing (https://github.com/ChandanTeekinavar/php-regist
 **Selenium** : It will do automation testing. I have pushed it to seperate gitHub repo. The repo link is "https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git" I have used Assembly plugin in the Selenium. It will create a Jar file with all the Dependencies when you packages it. So that you can run it. To package it run "mvn clean package" command. It will create a jar file with all dependencies file in the target folder.
 
 
-Application Deployment
+
+
+**Info about the project**
 After successfully creating the application and configuring the database, Docker is used to build and containerize the application. A Jenkins CICD pipeline is created to stage the Docker Container using Ansible Playbook on to the test server . After staging, a seperate CICD pipeline is created for automation testing using selenium. With successful automation testing it is deployed on to the production server with “prod_config.yml”.
 Also integrated GitHub Webhook so that the automation happens with a single commit on GitHub repository.
 
@@ -58,8 +60,3 @@ Update the your application link on the test scripts.
 And then package the test scripts. Hence I have used Assembly plugin in the Selenium. It will create a Jar file with all the Dependencies when you packages it. So that you can run it. To package it run "mvn clean package" command. It will create a jar file with all dependencies file in the target folder.
 
 To run that jar file give the command " java -jar <jar file name> (Give the name of the jar file which will be created after running the "mvn clean package" command)
-
-
-
-
-
