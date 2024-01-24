@@ -1,4 +1,4 @@
-**User Registration Application**
+**User Registration Form Application**
 Overview: -
 This project provides a simple user registration form built with PHP and MySQL
 It includes a registration form, database interaction, and basic password hashing. The application can be deployed using Docker and Ansible.
