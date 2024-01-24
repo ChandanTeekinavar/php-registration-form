@@ -40,7 +40,7 @@ Also integrated GitHub Webhook so that the automation happens with a single comm
 **Steps to use this App** : -
 Clone this repo to your machine by running " git clone https://github.com/ChandanTeekinavar/php-registration-form.git" .
 
-In Dockerfile there is environment placeholders you need to replace them with your database place holders.
+In Dockerfile there is environment placeholders you need to replace them with your database place holders. The container port is 80 
 
 Then create CI/CD pipeline to automate.
 
