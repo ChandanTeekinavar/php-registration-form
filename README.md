@@ -7,6 +7,7 @@ A streamlined User Registration Form Application crafted with PHP and MySQL. Thi
 
 
 
+
 **Key Features** : -
 
 📝 User-friendly registration form.
@@ -22,6 +23,7 @@ A streamlined User Registration Form Application crafted with PHP and MySQL. Thi
 🔧 Jenkins facilitates a robust CI/CD pipeline.
 
 ⚙️ Selenium employed for efficient automation testing. Check out the test cases here "https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git".
+
 
 
 
@@ -42,9 +44,11 @@ A streamlined User Registration Form Application crafted with PHP and MySQL. Thi
 
 
 
+
 **Project Insights** : -
 
 Following the successful application creation and database configuration, Docker simplifies the building and containerization process. Leveraging Jenkins CI/CD pipeline, the Docker Container is staged onto the test server using Ansible Playbook. Subsequently, a separate CI/CD pipeline is initiated for comprehensive automation testing via Selenium. Upon successful testing, deployment onto the production server is executed using "prod_config.yml". The project is seamlessly integrated with GitHub Webhook for automated processes triggered by a single GitHub repository commit.
+
 
 
 
@@ -65,7 +69,9 @@ Access the application through the IP address of your worker nodes and the appro
 
 
 
+
 **Testing** : -
+
 For testing, I've utilized a separate repository. Check out the test scripts here "https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git". 
 
 Update your application link in the test scripts and run the jar file generated after packaging with "mvn clean package". 
