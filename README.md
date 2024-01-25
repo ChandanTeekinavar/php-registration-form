@@ -6,6 +6,7 @@ Overview: -
 A streamlined User Registration Form Application crafted with PHP and MySQL. This dynamic application includes a secure registration form, robust database interaction, and incorporates essential password hashing. To enhance deployment, I've containerized it with Docker and implemented Ansible for seamless production and testing environment deployments.
 
 
+
 **Key Features** : -
 
 📝 User-friendly registration form.
@@ -49,6 +50,7 @@ Following the successful application creation and database configuration, Docker
 
 
 **Steps to use this App** : -
+
 Clone the repository using "git clone https://github.com/ChandanTeekinavar/php-registration-form.git".
 
 In the Dockerfile, replace environment placeholders with your database details.
