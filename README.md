@@ -2,62 +2,70 @@
 
 **User Registration Form Application**
 Overview: -
+
 A streamlined User Registration Form Application crafted with PHP and MySQL. This dynamic application includes a secure registration form, robust database interaction, and incorporates essential password hashing. To enhance deployment, I've containerized it with Docker and implemented Ansible for seamless production and testing environment deployments.
 
 
 **Key Features** : -
+
 📝 User-friendly registration form.
+
 🔒 Password hashing with bcrypt for enhanced security.
+
 🔄 Basic yet powerful database interaction.
+
 🐳 Containerized application with Docker.
+
 🚀 Ansible orchestrating deployments for both production and testing.
+
 🔧 Jenkins facilitates a robust CI/CD pipeline.
-⚙️ Selenium employed for efficient automation testing. Check out the test cases here.
+
+⚙️ Selenium employed for efficient automation testing. Check out the test cases here "https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git".
+
 
 
 **Files and Directory Structure**: -
-**register.html**: HTML file containing a simple form of Registration form with basic styling for a clean and user-friendly interface.
 
-**register.php**: PHP script is responsible for handling user interface. It interacts with the database to store the credentials securely.
+**register.html**: Clean HTML form for a seamless user experience.
 
-**config.php**: Configuration file containing database connection details.
+**register.php**: PHP script handling the user interface and securely interacting with the database.
 
-**Dockerfile**: - It containerize the application.
+**config.php**: Configuration file housing essential database connection details.
 
-**playbook.yml**: Ansible playbook file, which contains configurations to perform on the worker nodes. It installs Docker, starts the Docker service, and runs the Docker container with the registration form application on port 8080.
+**Dockerfile**: Containerizes the entire application.
 
-**Selenium** : It will do automation testing. I have pushed it to seperate gitHub repo. The repo link is "https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git" I have used Assembly plugin in the Selenium. It will create a Jar file with all the Dependencies when you packages it. So that you can run it. To package it run "mvn clean package" command. It will create a jar file with all dependencies file in the target folder.
+**playbook.yml**: Ansible playbook configuring worker nodes, installing Docker, and deploying the application on port 8080.
+
+**Selenium**: Automated testing with a separate GitHub repository. Find the Selenium test cases here "https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git".
 
 
 
 
-**Info about the project** : -
-After successfully creating the application and configuring the database, Docker is used to build and containerize the application. A Jenkins CICD pipeline is created to stage the Docker Container using Ansible Playbook on to the test server . After staging, a seperate CICD pipeline is created for automation testing using selenium. With successful automation testing it is deployed on to the production server with “prod_config.yml”.
-Also integrated GitHub Webhook so that the automation happens with a single commit on GitHub repository.
+**Project Insights** : -
+
+Following the successful application creation and database configuration, Docker simplifies the building and containerization process. Leveraging Jenkins CI/CD pipeline, the Docker Container is staged onto the test server using Ansible Playbook. Subsequently, a separate CI/CD pipeline is initiated for comprehensive automation testing via Selenium. Upon successful testing, deployment onto the production server is executed using "prod_config.yml". The project is seamlessly integrated with GitHub Webhook for automated processes triggered by a single GitHub repository commit.
 
 
 
 
 **Steps to use this App** : -
-Clone this repo to your machine by running " git clone https://github.com/ChandanTeekinavar/php-registration-form.git" .
+Clone the repository using "git clone https://github.com/ChandanTeekinavar/php-registration-form.git".
 
-In Dockerfile there is environment placeholders you need to replace them with your database place holders. The container port is 80 
+In the Dockerfile, replace environment placeholders with your database details.
 
-Then create CI/CD pipeline to automate.
+Build the Docker image.
 
-Then build the Docker image 
+Create an Ansible inventory file on the instance where Jenkins is installed .
 
-Create an ansible inventory file in the instance where jenkins is installed.
+Update the Docker image name in playbook.yml.
 
-And update docker image name in playbook.yml
+Access the application through the IP address of your worker nodes and the appropriate port. (The container port in the Dockerfile is 80)
 
-And then you can you access it through the IP address of you worker nodes by giving appropriate port number.
+
 
 **Testing** : -
-For testing I have used the different repo. The repo link is "https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git".
+For testing, I've utilized a separate repository. Check out the test scripts here "https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git". 
 
-Update the your application link on the test scripts.
+Update your application link in the test scripts and run the jar file generated after packaging with "mvn clean package". 
 
-And then package the test scripts. Hence I have used Assembly plugin in the Selenium. It will create a Jar file with all the Dependencies when you packages it. So that you can run it. To package it run "mvn clean package" command. It will create a jar file with all dependencies file in the target folder.
-
-To run that jar file give the command " java -jar <jar file name> (Give the name of the jar file which will be created after running the "mvn clean package" command)
+Execute the jar file with the command "java -jar (jar file name)".
