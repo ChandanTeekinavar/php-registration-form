@@ -2,18 +2,17 @@
 
 **User Registration Form Application**
 Overview: -
-This project provides a simple user registration form built with PHP and MySQL
-It includes a registration form, database interaction, and basic password hashing. The application can be deployed using Docker and Ansible.
+A streamlined User Registration Form Application crafted with PHP and MySQL. This dynamic application includes a secure registration form, robust database interaction, and incorporates essential password hashing. To enhance deployment, I've containerized it with Docker and implemented Ansible for seamless production and testing environment deployments.
 
 
 **Key Features** : -
-User registration form.
-Password hashing with bcrypt.
-Basic database interaction.
-containerizing the application with docker.
-Ansible for deployin to production and testing environments.
-Jenkins for CI/CD Pipeline
-Selenium for Automation testing (https://github.com/ChandanTeekinavar/php-registration-form-test-cases.git)
+📝 User-friendly registration form.
+🔒 Password hashing with bcrypt for enhanced security.
+🔄 Basic yet powerful database interaction.
+🐳 Containerized application with Docker.
+🚀 Ansible orchestrating deployments for both production and testing.
+🔧 Jenkins facilitates a robust CI/CD pipeline.
+⚙️ Selenium employed for efficient automation testing. Check out the test cases here.
 
 
 **Files and Directory Structure**: -
