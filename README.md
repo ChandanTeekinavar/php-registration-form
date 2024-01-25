@@ -1,6 +1,6 @@
 ![php-registration-FlowChart drawio](https://github.com/ChandanTeekinavar/php-registration-form/assets/146753303/94c07d53-2c67-417b-abfa-92ff1be61d04)
 
-**User Registration Form Application**
+**Full-Stack Web Application: User Registration Form Application**
 Overview: -
 
 A streamlined User Registration Form Application crafted with PHP and MySQL. This dynamic application includes a secure registration form, robust database interaction, and incorporates essential password hashing. To enhance deployment, I've containerized it with Docker and implemented Ansible for seamless production and testing environment deployments.
