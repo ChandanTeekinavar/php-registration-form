@@ -14,9 +14,9 @@ RUN chown -R www-data:www-data /var/www/html # Set ownership and permissions
 
 EXPOSE 80
 
-ENV DB_HOST=database-1.cslawiqjy7my.ap-south-1.rds.amazonaws.com
-ENV DB_USER=admin
-ENV DB_PASS=admin123
-ENV DB_NAME=register
+ENV DB_HOST= <give the end point of your DataBase> 
+ENV DB_USER=<Give the User name of the DataBase>
+ENV DB_PASS=<Give the password of the DataBase>
+ENV DB_NAME=<Give the name of the DataBase>
 
 CMD ["apache2-foreground"]
